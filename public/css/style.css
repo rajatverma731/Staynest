@@ -1,0 +1,171 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+.container{
+    flex: 1;
+}
+/* Navbar */
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+/* icon */
+
+.fa-leaf{
+    color: rgb(2, 69, 69);
+    font-size: 29px;
+}
+
+.nav-link{
+    color: #222222 !important;
+}.f-info {
+    height: 8rem;
+    background-color: #ebeaea;
+    display: flex;
+    flex-direction: column;   /* stack vertically */
+    justify-content: center;
+    align-items: center;      /* center horizontally */
+    text-align: center;
+    gap: 0.8rem;
+}
+
+.f-info-socials {
+    font-size: 1.5rem;
+}
+
+.f-info-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+/* cards */
+
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p{
+    font-weight: 400;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+/* Smooth card hover effect */
+.card {
+    border: none !important;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+/* Pop-up effect */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.card-img-top {
+    height: 20rem;
+    width: 100% !important;
+    object-fit: cover !important;
+    transition: transform 0.4s ease;
+}
+
+/* Zoom image slightly */
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Overlay effect */
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s ease;
+    border-radius: 1rem;
+}
+
+.card:hover::before {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.btn btn-outline-success{
+
+}
+/* From Uiverse.io by barisdogansutcu */ 
+button {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+button:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.btn-add:hover {
+  background-position: right top;
+}
+
+.btn-add:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--btn-bg-color),
+    0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-add {
+    transition: linear;
+  }
+}
